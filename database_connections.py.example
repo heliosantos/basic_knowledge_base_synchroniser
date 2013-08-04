@@ -1,0 +1,12 @@
+import pymongo
+
+from pymongo import MongoClient
+
+def get_databases():
+  databases = []
+
+  databases.append(MongoClient('mongodb://the_username:the_password@dharma.mongohq.com:10012/app16774649').app16774649)
+
+  databases.append(MongoClient('localhost', 27017).bkb_development)
+
+  return databases
